@@ -1,14 +1,11 @@
 /** @format */
 
-import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
       return (
-            <Button
-                  size={"sm"}
-                  variant='default'
-            >
-                  asdasdasdst
-            </Button>
+            <div className='h-screen'>
+                  <UserButton afterSignOutUrl='/' />
+            </div>
       );
 }
